@@ -1,0 +1,870 @@
+/*  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lexend:500,700,400");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+/*  */
+.student-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: #f7fafc;
+}
+
+.student-profile .depth-frame {
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+}
+
+.student-profile .div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  padding: 20px 24px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.student-profile .depth-frame-3 {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.student-profile .arrow-left-long-fill {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.student-profile .depth-frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.student-profile .depth-frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-5 {
+  display: flex;
+  gap: 12px;
+  align-self: stretch;
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .ellipse {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.student-profile .div-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  height: 40px;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 500;
+  color: #111416;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.student-profile .depth-frame-6 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.student-profile .depth-frame-7 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  align-self: stretch;
+  width: 100%;
+  background-color: #eff2f4;
+  border-radius: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .img {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-8 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 500;
+  color: #111416;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.student-profile .depth-frame-9 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  align-self: stretch;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-10 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  align-self: stretch;
+  width: 100%;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 500;
+  color: #111416;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.student-profile .vector {
+  position: relative;
+  width: 20px;
+  height: 18px;
+}
+
+.student-profile .text-wrapper-4 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 500;
+  color: #111416;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.student-profile .vector-2 {
+  position: relative;
+  width: 20px;
+  height: 12.83px;
+}
+
+.student-profile .depth-frame-11 {
+  max-width: 960px;
+  flex: 1;
+  flex-grow: 1;
+  margin-bottom: -2.00px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.student-profile .depth-frame-12 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px 12px;
+  padding: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-13 {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 288px;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-14 {
+  display: flex;
+  flex-direction: column;
+  width: 383px;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 700;
+  color: #111416;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 40px;
+}
+
+.student-profile .p {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #607589;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.student-profile .depth-frame-15 {
+  align-items: flex-start;
+  padding: 16px;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.student-profile .depth-frame-16 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.student-profile .depth-frame-17 {
+  display: inline-flex;
+  gap: 16px;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .ellipse-2 {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 70px;
+}
+
+.student-profile .depth-frame-18 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 128px;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-19 {
+  display: flex;
+  width: 152px;
+  height: 28px;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.student-profile .text-wrapper-6 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 700;
+  color: #111416;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.student-profile .depth-frame-20 {
+  display: flex;
+  flex-direction: column;
+  width: 152px;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .text-wrapper-7 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #607589;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.student-profile .text-wrapper-8 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #607589;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.student-profile .depth-frame-21 {
+  min-width: 84px;
+  max-width: 480px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #eff2f4;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.student-profile .depth-frame-22 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .text-wrapper-9 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 700;
+  color: #111416;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.student-profile .depth-frame-23 {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  align-items: flex-start;
+  padding: 20px 16px 12px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.student-profile .depth-frame-24 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 480px;
+  align-items: flex-end;
+  gap: 16px 16px;
+  padding: 12px 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-25 {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.student-profile .depth-frame-26 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 8px;
+  flex: 0 0 auto;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.student-profile .text-wrapper-10 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 500;
+  color: #111416;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.student-profile .depth-frame-27 {
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #dbe0e5;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.student-profile .input-field {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  padding: 0 12px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #111416;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  outline: none;
+}
+
+.student-profile .input-field::placeholder {
+  color: #607589;
+}
+
+.student-profile .input-field:focus {
+  outline: none;
+}
+
+.student-profile .depth-frame-28 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-29 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #dbe0e5;
+}
+
+.student-profile .depth-frame-30 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.student-profile .depth-frame-31 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+  background-color: #ffffff;
+}
+
+.student-profile .depth-frame-32 {
+  display: flex;
+  flex-direction: column;
+  width: 241px;
+  align-items: flex-start;
+  padding: 12px 16px;
+  position: relative;
+  align-self: stretch;
+}
+
+.student-profile .depth-frame-33 {
+  display: flex;
+  flex-direction: column;
+  width: 232px;
+  align-items: flex-start;
+  padding: 12px 16px;
+  position: relative;
+  align-self: stretch;
+}
+
+.student-profile .depth-frame-34 {
+  display: flex;
+  flex-direction: column;
+  width: 186px;
+  align-items: flex-start;
+  padding: 12px 16px;
+  position: relative;
+  align-self: stretch;
+}
+
+.student-profile .depth-frame-35 {
+  display: flex;
+  flex-direction: column;
+  width: 216px;
+  align-items: flex-start;
+  padding: 12px 16px;
+  position: relative;
+  align-self: stretch;
+  margin-right: -1.00px;
+}
+
+.student-profile .depth-frame-36 {
+  display: flex;
+  height: 72px;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-color: #e5e8ea;
+}
+
+.student-profile .depth-frame-37 {
+  width: 241px;
+  display: flex;
+  flex-direction: column;
+  height: 72px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  position: relative;
+  margin-bottom: -1.00px;
+}
+
+.student-profile .text-wrapper-11 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #111416;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.student-profile .depth-frame-38 {
+  width: 232px;
+  display: flex;
+  flex-direction: column;
+  height: 72px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  position: relative;
+  margin-bottom: -1.00px;
+}
+
+.student-profile .text-wrapper-12 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #607589;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.student-profile .depth-frame-39 {
+  width: 186px;
+  display: flex;
+  flex-direction: column;
+  height: 72px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  position: relative;
+  margin-bottom: -1.00px;
+}
+
+.student-profile .depth-frame-40 {
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  position: relative;
+  width: 100%;
+  background-color: #eff2f4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.student-profile .text-wrapper-13 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 500;
+  color: #111416;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.student-profile .depth-frame-41 {
+  width: 216px;
+  margin-right: -1.00px;
+  display: flex;
+  flex-direction: column;
+  height: 72px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  position: relative;
+  margin-bottom: -1.00px;
+}
+
+.student-profile .depth-frame-42 {
+  height: 72px;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.student-profile .depth-frame-43 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-44 {
+  flex-direction: column;
+  width: 86px;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.student-profile .text-wrapper-14 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #607589;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.student-profile .depth-frame-45 {
+  flex-direction: column;
+  width: 83px;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.student-profile .depth-frame-46 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 16px 12px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-47 {
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.student-profile .text-wrapper-15 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 400;
+  color: #111416;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.student-profile .depth-frame-48 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 12px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.student-profile .depth-frame-49 {
+  display: inline-flex;
+  min-width: 84px;
+  max-width: 480px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #117fed;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.student-profile .text-wrapper-16 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Lexend", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 21px;
+  white-space: nowrap;
+}

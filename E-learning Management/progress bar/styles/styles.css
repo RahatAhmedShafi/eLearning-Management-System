@@ -1,0 +1,664 @@
+/*  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lexend:500|Inter:500,700,400");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+/*  */
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: #f7fafc;
+  min-height: 100vh;
+}
+
+.progress-bar .depth-frame {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 1;
+  background-color: #f7f9fc;
+}
+
+.progress-bar .div-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 1;
+}
+
+.progress-bar .div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* Sidebar */
+.progress-bar .depth-frame-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  order: 2;
+}
+
+.progress-bar .depth-frame-2 {
+  flex-direction: column;
+  min-height: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.progress-bar .depth-frame-3 {
+  flex-direction: column;
+  gap: 1rem;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.progress-bar .depth-frame-4 {
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.progress-bar .ellipse {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.progress-bar .depth-frame-5 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.progress-bar .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  font-family: "Lexend", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #111416;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  letter-spacing: 0;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.progress-bar .depth-frame-6 {
+  flex-direction: column;
+  gap: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.progress-bar .depth-frame-7 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  align-self: stretch;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  position: relative;
+  flex: 0 0 auto;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.progress-bar .depth-frame-7:hover {
+  background-color: #f7f9fc;
+}
+
+.progress-bar .img {
+  position: relative;
+  flex: 0 0 auto;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.progress-bar .depth-frame-8 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.progress-bar .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Lexend", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #111416;
+  font-size: clamp(0.813rem, 1.8vw, 0.875rem);
+  letter-spacing: 0;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.progress-bar .depth-frame-9 {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.progress-bar .depth-frame-9:hover {
+  background-color: #f7f9fc;
+}
+
+.progress-bar .depth-frame-10 {
+  width: 100%;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background-color: #eff2f4;
+  border-radius: 0.5rem;
+  display: flex;
+  position: relative;
+}
+
+.progress-bar .text-wrapper-3 {
+  position: relative;
+  flex: 1;
+  font-family: "Lexend", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #111416;
+  font-size: clamp(0.813rem, 1.8vw, 0.875rem);
+  letter-spacing: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Main Content */
+.progress-bar .depth-frame-11 {
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  order: 1;
+}
+
+.progress-bar .depth-frame-12 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.progress-bar .depth-frame-13 {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.progress-bar .text-wrapper-4 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #0c141c;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+.progress-bar .depth-frame-14 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem 1rem 0.75rem;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.progress-bar .text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #0c141c;
+  font-size: clamp(1.125rem, 3vw, 1.375rem);
+  letter-spacing: 0;
+  line-height: 1.27;
+}
+
+.progress-bar .depth-frame-15 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.progress-bar .depth-frame-16 {
+  justify-content: space-between;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.progress-bar .depth-frame-17 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+
+.progress-bar .depth-frame-18 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.progress-bar .text-wrapper-6 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #4c7299;
+  font-size: clamp(0.813rem, 1.8vw, 0.875rem);
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.progress-bar .text-wrapper-7 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #0c141c;
+  font-size: clamp(0.938rem, 2.2vw, 1rem);
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+.progress-bar .depth-frame-19 {
+  display: inline-flex;
+  min-width: 5.25rem;
+  max-width: 100%;
+  height: 2rem;
+  justify-content: center;
+  padding: 0 1rem;
+  background-color: #e8edf2;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.progress-bar .depth-frame-19:hover {
+  background-color: #d8dfe6;
+}
+
+.progress-bar .depth-frame-20 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.progress-bar .text-wrapper-8 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #0c141c;
+  font-size: clamp(0.813rem, 1.8vw, 0.875rem);
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.progress-bar .depth-frame-21 {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  border-radius: 0.5rem;
+  background: url(../images/Depth\ 6\,\ Frame\ 1\ \(1\).png) center center / cover no-repeat;
+}
+
+.progress-bar .depth-frame-22 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.progress-bar .depth-frame-23 {
+  justify-content: space-between;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.progress-bar .text-wrapper-9 {
+  position: relative;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #0c141c;
+  font-size: clamp(0.938rem, 2.2vw, 1rem);
+  letter-spacing: 0;
+  line-height: 1.5;
+  flex: 1;
+  min-width: 0;
+}
+
+.progress-bar .depth-frame-24 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.progress-bar .text-wrapper-10 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #0c141c;
+  font-size: clamp(0.813rem, 1.8vw, 0.875rem);
+  letter-spacing: 0;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.progress-bar .depth-frame-25 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #cedbe8;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.progress-bar .depth-frame-26 {
+  position: relative;
+  width: 60%;
+  height: 0.5rem;
+  background-color: #117fed;
+  border-radius: 0.25rem;
+  transition: width 0.3s ease;
+}
+
+.progress-bar .depth-frame-27 {
+  min-height: 4.5rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f7f9fc;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.progress-bar .depth-frame-28 {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+}
+
+.progress-bar .depth-frame-29 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.progress-bar .depth-frame-30 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.progress-bar .depth-frame-31 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.progress-bar .depth-frame-32 {
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  flex: 0 0 auto;
+  background-color: #f7f9fc;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.progress-bar .depth-frame-33 {
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  min-width: 0;
+}
+
+.progress-bar .text-wrapper-11 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #0c141c;
+  font-size: clamp(0.938rem, 2.2vw, 1rem);
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+/* Tablet breakpoint (768px and up) */
+@media (min-width: 48rem) {
+  .progress-bar .div {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .progress-bar .depth-frame-wrapper {
+    width: 20rem;
+    order: 1;
+    flex-shrink: 0;
+  }
+
+  .progress-bar .depth-frame-11 {
+    order: 2;
+    max-width: calc(100% - 21.5rem);
+  }
+
+  .progress-bar .depth-frame-16 {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .progress-bar .depth-frame-17 {
+    width: 60%;
+    min-width: 20rem;
+  }
+
+  .progress-bar .depth-frame-21 {
+    flex: 1;
+    height: auto;
+    min-height: 10rem;
+  }
+}
+
+/* Desktop breakpoint (1024px and up) */
+@media (min-width: 64rem) {
+  .progress-bar .div {
+    padding: 1.5rem 3rem;
+    gap: 2rem;
+  }
+
+  .progress-bar .depth-frame-wrapper {
+    width: 22rem;
+  }
+
+  .progress-bar .depth-frame-11 {
+    max-width: 60rem;
+  }
+
+  .progress-bar .depth-frame-2 {
+    padding: 1.5rem;
+  }
+
+  .progress-bar .depth-frame-12 {
+    padding: 1.5rem;
+  }
+
+  .progress-bar .depth-frame-15 {
+    padding: 1.5rem;
+  }
+}
+
+/* Large monitor breakpoint (1440px and up) */
+@media (min-width: 90rem) {
+  .progress-bar .div {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+}
+
+/* Focus styles for accessibility */
+.progress-bar .depth-frame-7:focus-visible,
+.progress-bar .depth-frame-9:focus-visible,
+.progress-bar .depth-frame-19:focus-visible {
+  outline: 2px solid #117fed;
+  outline-offset: 2px;
+}

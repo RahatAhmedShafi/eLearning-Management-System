@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    sans-serif;
+  background-color: #f7fafc;
+  color: #0c141c;
+  line-height: 1.5;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background-color: #f7f9fc;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e8ea;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-icon {
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #0c141c;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  color: #0c141c;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #4c7299;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  min-width: 160px;
+  max-width: 256px;
+  background-color: #e8edf2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-icon {
+  margin-left: 12px;
+  margin-right: 8px;
+  color: #4c7299;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #0c141c;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #4c7299;
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.icon-button:hover {
+  background-color: #e8edf2;
+}
+
+.icon-button svg {
+  color: #0c141c;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px 40px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Welcome Section */
+.welcome-section {
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.welcome-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #0c141c;
+  margin-bottom: 12px;
+}
+
+.welcome-text {
+  font-size: 14px;
+  color: #4c7299;
+  line-height: 1.5;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #0c141c;
+  padding: 20px 16px 12px;
+}
+
+/* Courses Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 240px;
+}
+
+.course-image {
+  height: 135px;
+  width: 100%;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.course-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #0c141c;
+  line-height: 1.5;
+}
+
+.course-instructor {
+  font-size: 14px;
+  color: #4c7299;
+  line-height: 1.5;
+}
+
+/* Continue Learning Card */
+.continue-learning-card {
+  padding: 16px;
+}
+
+.continue-learning-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+.continue-learning-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.continue-learning-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0c141c;
+  line-height: 1.25;
+}
+
+.continue-learning-course {
+  font-size: 14px;
+  color: #4c7299;
+  line-height: 1.5;
+}
+
+.continue-button {
+  height: 32px;
+  padding: 0 16px;
+  background-color: #e8edf2;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0c141c;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 16px;
+}
+
+.continue-button:hover {
+  background-color: #d9e2ea;
+}
+
+.continue-learning-image {
+  height: 171px;
+  width: 171px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Assignments Table */
+.assignments-table {
+  padding: 12px 16px;
+}
+
+.assignments-table table {
+  width: 100%;
+  background-color: #f7f9fc;
+  border: 1px solid #cedbe8;
+  border-radius: 8px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.assignments-table thead {
+  background-color: #f7f9fc;
+}
+
+.assignments-table th {
+  padding: 16px 8px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0c141c;
+}
+
+.assignments-table tbody tr {
+  height: 72px;
+  border-top: 1px solid #e5e8ea;
+}
+
+.assignments-table td {
+  padding: 16px 8px;
+  font-size: 14px;
+  color: #0c141c;
+}
+
+.assignments-table .text-muted {
+  color: #4c7299;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  height: 32px;
+  padding: 0 12px;
+  background-color: #e8edf2;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0c141c;
+}
+
+/* Quick Links Grid */
+.quick-links-grid {
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.quick-link-card {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: #f7f9fc;
+  border: 1px solid #cedbe8;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.quick-link-card:hover {
+  background-color: #eef3f8;
+}
+
+.quick-link-icon {
+  flex-shrink: 0;
+}
+
+.quick-link-text {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0c141c;
+  line-height: 1.25;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease forwards;
+  opacity: 0;
+  transform: translateY(-10px);
+}

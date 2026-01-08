@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard</title>
+  <!--  -->
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <!--  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend:wght@700&display=swap"
+    rel="stylesheet" />
+    <!--  -->
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-section">
+          <img src="./images/icons/Depth 5, Frame 0.png" alt="EduHub Logo" class="logo-icon" />
+          <h1 class="logo-text">EduHub</h1>
+        </div>
+
+        <nav class="nav">
+          <a href="#dashboard" class="nav-link">Dashboard</a>
+          <a href="#courses" class="nav-link">Courses</a>
+          <a href="#calendar" class="nav-link">Calendar</a>
+          <a href="#messages" class="nav-link">Messages</a>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <div class="search-box">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input type="text" placeholder="Search" class="search-input" />
+        </div>
+
+        <button class="icon-button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+          </svg>
+        </button>
+
+        <img src="./images/download.png" alt="User profile" class="avatar" />
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Welcome Section -->
+        <section class="welcome-section fade-in">
+          <h2 class="welcome-title">Welcome back, Rakib !</h2>
+          <p class="welcome-text">
+            Here's a summary of your learning progress and upcoming tasks.
+          </p>
+        </section>
+        <!-- Welcome Section End -->
+
+        <!-- My Courses Section -->
+        <section class="section">
+          <h2 class="section-title fade-in" style="animation-delay: 0.2s">
+            My Courses
+          </h2>
+
+          <div class="courses-grid">
+            <div class="course-card fade-in" style="animation-delay: 0.4s">
+              <div class="course-image" style="
+                    background-image: url('./images/Depth\ 7\,\ Frame\ 0.png');
+                  "></div>
+              <div class="course-info">
+                <h3 class="course-title">Introduction to Psychology</h3>
+                <p class="course-instructor">Instructor: Dr. Emily Carter</p>
+              </div>
+            </div>
+
+            <div class="course-card fade-in" style="animation-delay: 0.6s">
+              <div class="course-image" style="
+                    background-image: url('./images/Depth\ 7\,\ Frame\ 0\ \(1\).png');
+                  "></div>
+              <div class="course-info">
+                <h3 class="course-title">Advanced Calculus</h3>
+                <p class="course-instructor">Instructor: Prof. David Lee</p>
+              </div>
+            </div>
+
+            <div class="course-card fade-in" style="animation-delay: 0.8s">
+              <div class="course-image" style="
+                    background-image: url('./images/Depth\ 7\,\ Frame\ 0\ \(2\).png');
+                  "></div>
+              <div class="course-info">
+                <h3 class="course-title">Creative Writing Workshop</h3>
+                <p class="course-instructor">Instructor: Ms. Olivia Chen</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- My Courses Section End -->
+
+        <!-- Continue Learning Section -->
+        <section class="section">
+          <h2 class="section-title fade-in" style="animation-delay: 1s">
+            Continue Learning
+          </h2>
+
+          <div class="continue-learning-card fade-in" style="animation-delay: 1.2s">
+            <div class="continue-learning-content">
+              <div class="continue-learning-info">
+                <h3 class="continue-learning-title">
+                  Lesson 3: Cognitive Processes
+                </h3>
+                <p class="continue-learning-course">Psychology 101</p>
+                <button class="continue-button">Continue</button>
+              </div>
+              <div class="continue-learning-image" style="
+                    background-image: url('./images/Depth\ 6\,\ Frame\ 1.png');
+                  "></div>
+            </div>
+          </div>
+        </section>
+        <!-- Continue Learning Section End -->
+
+        <!-- Upcoming Assignments Section -->
+        <section class="section">
+          <h2 class="section-title fade-in" style="animation-delay: 1.4s">
+            Upcoming Assignments
+          </h2>
+
+          <div class="assignments-table fade-in" style="animation-delay: 1.6s">
+            <table>
+              <thead>
+                <tr>
+                  <th>Assignment</th>
+                  <th>Course</th>
+                  <th>Due Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Essay on Memory</td>
+                  <td class="text-muted">Psychology 101</td>
+                  <td class="text-muted">Nov 27, 2025</td>
+                  <td>
+                    <span class="status-badge">In Progress</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Calculus Problem Set 2</td>
+                  <td class="text-muted">Advanced Calculus</td>
+                  <td class="text-muted">Dec 27, 2025</td>
+                  <td>
+                    <span class="status-badge">Not Started</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Short Story Submission</td>
+                  <td class="text-muted">Creative Writing Workshop</td>
+                  <td class="text-muted">Dec 27, 2025</td>
+                  <td>
+                    <span class="status-badge">Not Started</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <!-- Upcoming Assignments Section End -->
+
+        <!-- Quick Links Section -->
+        <section class="section">
+          <h2 class="section-title fade-in" style="animation-delay: 1.8s">
+            Quick Links
+          </h2>
+
+          <div class="quick-links-grid">
+            <a href="#" class="quick-link-card fade-in" style="animation-delay: 2s">
+              <img src="./images/quick links/Depth 7, Frame 0.png" alt="Course Materials" class="quick-link-icon" />
+              <span class="quick-link-text">Course Materials</span>
+            </a>
+
+            <a href="#" class="quick-link-card fade-in" style="animation-delay: 2.1s">
+              <img src="./images/quick links/Depth 8, Frame 0.png" alt="Academic Calendar" class="quick-link-icon" />
+              <span class="quick-link-text">Academic Calendar</span>
+            </a>
+
+            <a href="#" class="quick-link-card fade-in" style="animation-delay: 2.2s">
+              <img src="./images/quick links/Depth 7, Frame 0 (1).png" alt="Student Forum" class="quick-link-icon" />
+              <span class="quick-link-text">Student Forum</span>
+            </a>
+
+            <a href="#" class="quick-link-card fade-in" style="animation-delay: 2.3s">
+              <img src="./images/quick links/Depth 7, Frame 0 (2).png" alt="Help Center" class="quick-link-icon" />
+              <span class="quick-link-text">Help Center</span>
+            </a>
+          </div>
+        </section>
+        <!-- Quick Links Section End -->
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

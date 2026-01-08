@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eLMS - Course Overview</title>
+    <!--  -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!--  -->
+  </head>
+  <body>
+    <!-- Header -->
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">🎓</div>
+          <div class="logo-text">
+            <h1>eLMS</h1>
+            <p>eLearning Management System</p>
+          </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="index.html" class="active">My courses</a></li>
+            <li><a href="all-courses.html">All Course</a></li>
+            <li><a href="course-search.html">Course search</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <button class="notification-btn" aria-label="Notifications">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <span class="notification-badge">4</span>
+          </button>
+          <div class="user-info">
+            <span>0M</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6L8 10L12 6" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <h2>Course overview</h2>
+
+      <!-- Filters -->
+      <div class="filters">
+        <select class="filter-dropdown">
+          <option>All</option>
+          <option>Dept. of CSE</option>
+          <option>Dept. of Math</option>
+          <option>Dept. of ENG</option>
+        </select>
+
+        <input type="text" class="search-input" placeholder="Search" />
+
+        <select class="filter-dropdown">
+          <option>Sort by course name</option>
+          <option>Sort by date</option>
+          <option>Sort by department</option>
+        </select>
+
+        <select class="filter-dropdown">
+          <option>Card</option>
+          <option>List</option>
+        </select>
+      </div>
+
+      <!-- Course Grid -->
+      <div class="course-grid">
+        <!-- Course 1 -->
+        <div class="course-card">
+          <div class="course-image green">
+            <span class="dept-badge">Dept. of CSE</span>
+          </div>
+          <div class="course-content">
+            <div class="course-title">Fall 25 CSE 123/EEE 2123 (I) : Electronics</div>
+            <button class="info-btn" aria-label="Course info">i</button>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+          <div class="course-image cyan">
+            <span class="dept-badge">Dept. of CSE</span>
+          </div>
+          <div class="course-content">
+            <div class="course-title">Fall 25 CSE 3412/CSI 312 (Q) : System Analysis ...</div>
+            <button class="info-btn" aria-label="Course info">i</button>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+          <div class="course-image orange">
+            <span class="dept-badge">Dept. of CSE</span>
+          </div>
+          <div class="course-content">
+            <div class="course-title">Fall 25 CSE 3421/CSI 321 (F) : Software ...</div>
+            <button class="info-btn" aria-label="Course info">i</button>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card">
+          <div class="course-image yellow">
+            <span class="dept-badge">Dept. of CSE</span>
+          </div>
+          <div class="course-content">
+            <div class="course-title">Fall 25 CSE 4165/CSE 465 (E) : Web Programming</div>
+            <button class="info-btn" aria-label="Course info">i</button>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course-card">
+          <div class="course-image cyan">
+            <span class="dept-badge">Dept. of CSE</span>
+          </div>
+          <div class="course-content">
+            <div class="course-title">Fall 25 CSE 469/PMG 4101 (A) : Project ...</div>
+            <button class="info-btn" aria-label="Course info">i</button>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course-card">
+          <div class="course-image green">
+            <span class="dept-badge">Dept. of CSE</span>
+          </div>
+          <div class="course-content">
+            <div class="course-title">Fall 25 CSE 4889/CSE 489 (B) : Machine Learning</div>
+            <button class="info-btn" aria-label="Course info">i</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Help Button -->
+    <button class="help-btn" aria-label="Help">?</button>
+  </body>
+</html>
