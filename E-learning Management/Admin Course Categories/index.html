@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Categories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <!-- Left sidebar -->
+  <aside class="sidebar">
+    <div class="logo">EduHub</div>
+
+    <nav class="nav-list">
+      <div class="nav-item"><a href="../Admin Dashboard/index.html" style="text-decoration: none;color: black;">Dashboard</a></div>
+      <div class="nav-item"><a href="../Admin Course mng/index.html"style="text-decoration: none;color: black;">Courses</a></div>
+      <div class="nav-item"><a href="../Admin User mng/index.html"style="text-decoration: none;color: black;">Users</a></div>
+      <div class="nav-item" ><a href="../Admin Instructor Applications/index.html"style="text-decoration: none;color: black;">Instructors</a></div>
+      <div class="nav-item" ><a href="../Admin Certificate Templates/index.html"style="text-decoration: none;color: black;">Certificate</a></div>
+     
+       <div  class="nav-item active"><a href="../Admin Course Categories/index.html"style="text-decoration: none;color: black;">Categories</a></div>
+      <div class="nav-item">Settings</div>
+    </nav>
+
+    <button class="btn btn-primary create-btn">Create a course</button>
+
+    <div class="side-footer">
+      <button class="link-btn">Help and Support</button>
+      <button class="link-btn">Log out</button>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main">
+    <header class="main-header">
+      <h1 class="page-title">Course Categories</h1>
+      <button class="btn btn-light">Add Category</button>
+    </header>
+
+    <section class="table-box">
+      <div class="table-header">
+        <div>Category Name</div>
+        <div>Description</div>
+        <div>Parent Category</div>
+        <div>Actions</div>
+      </div>
+
+      <div class="table-row">
+        <div>Mathematics</div>
+        <div>Fundamental concepts of algebra, calculus, and geometry.</div>
+        <div>None</div>
+        <div class="actions"><a href="#">Edit</a> | <a href="#">Delete</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>Science</div>
+        <div>Exploration of physics, chemistry, and biology.</div>
+        <div>None</div>
+        <div class="actions"><a href="#">Edit</a> | <a href="#">Delete</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>Humanities</div>
+        <div>Study of history, literature, and philosophy.</div>
+        <div>None</div>
+        <div class="actions"><a href="#">Edit</a> | <a href="#">Delete</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>Advanced Calculus</div>
+        <div>Advanced topics in calculus.</div>
+        <div>Mathematics</div>
+        <div class="actions"><a href="#">Edit</a> | <a href="#">Delete</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>Organic Chemistry</div>
+        <div>Study of organic compounds.</div>
+        <div>Science</div>
+        <div class="actions"><a href="#">Edit</a> | <a href="#">Delete</a></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

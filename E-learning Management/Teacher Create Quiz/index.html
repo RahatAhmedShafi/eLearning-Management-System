@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="teacher-box">
+      <div class="teacher-avatar">R</div>
+      <div class="teacher-meta">
+        <div class="name">Ms. Rahat</div>
+        <div class="role">Teacher</div>
+      </div>
+    </div>
+
+    <nav class="nav-list">
+      <div class="nav-item active"><a href="../Teacher Dashboard/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Dashboard</a></div>
+      <div class="nav-item"><a href="../Teacher Course Content Management/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Courses</a></div>
+      <div class="nav-item">Calendar</div>
+      <div class="nav-item">Messages</div>
+      <div class="nav-item selected"><a href="../Teacher Create Quiz/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Quiz</a></div>
+      <div class="nav-item "><a href="../Teacher Create Assignment/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Assignment</a></div>
+      <div class="nav-item"><a href="../Teacher Submission Grading/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Grading</a></div>
+      <div class="nav-item">Settings</div>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main">
+    <h1 class="page-title">Course Content Management</h1>
+    <p class="page-subtitle">
+      Manage and upload course materials for your students.
+    </p>
+
+    <!-- Upload New Materials -->
+    <section class="section">
+      <h2 class="section-title">Upload New Materials</h2>
+
+      <div class="form-group">
+        <label for="courseTitle">Course Title</label>
+        <input id="courseTitle" class="input" type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="contentType">Content Type</label>
+        <input id="contentType" class="input" type="text">
+      </div>
+    </section>
+
+    <!-- Quiz Details -->
+    <section class="section">
+      <h2 class="section-title">Quiz Details</h2>
+
+      <div class="form-group">
+        <label for="quizTitle">Quiz Title</label>
+        <input id="quizTitle" class="input" type="text" placeholder="Enter quiz title">
+      </div>
+
+      <div class="form-group">
+        <label for="quizDescription">Quiz Description</label>
+        <textarea id="quizDescription" class="textarea"></textarea>
+      </div>
+    </section>
+
+    <!-- Add Questions -->
+    <section class="section">
+      <h2 class="section-title">Add Questions</h2>
+
+      <div class="search-bar">
+        <input class="search-input" type="text" placeholder="Search questions">
+      </div>
+
+      <!-- Questions table -->
+      <div class="table-box">
+        <div class="table-header">
+          <div>Question</div>
+          <div>Category</div>
+          <div>Difficulty</div>
+          <div>Type</div>
+          <div>Actions</div>
+        </div>
+
+        <div class="table-row">
+          <div>What is the difference between a stack and a queue?</div>
+          <div><a href="#">Data Structures</a></div>
+          <div>Medium</div>
+          <div>Multiple Choice</div>
+          <div><a href="#">Edit</a></div>
+        </div>
+
+        <div class="table-row">
+          <div>Explain the concept of polymorphism in object-oriented programming.</div>
+          <div><a href="#">Object-Oriented Programming</a></div>
+          <div>Hard</div>
+          <div>True/False</div>
+          <div><a href="#">Edit</a></div>
+        </div>
+
+        <div class="table-row">
+          <div>Describe the purpose of a compiler.</div>
+          <div><a href="#">Computer Architecture</a></div>
+          <div>Easy</div>
+          <div>Short Answer</div>
+          <div><a href="#">Edit</a></div>
+        </div>
+      </div>
+
+      <div class="bottom-row">
+        <button class="btn btn-light">Add New Question</button>
+        <button class="btn btn-primary">Save Changes</button>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eLMS - Course Overview</title>
-    <!--  -->
     <link rel="stylesheet" href="./styles/styles.css">
-    <!--  -->
   </head>
   <body>
-    <!-- Header -->
+    <header>
       <div class="header-content">
         <div class="logo">
           <div class="logo-icon">🎓</div>
@@ -21,11 +19,10 @@
 
         <nav>
           <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="../Dashboard/index.html">Dashboard</a></li>
             <li><a href="index.html" class="active">My courses</a></li>
-            <li><a href="all-courses.html">All Course</a></li>
-            <li><a href="course-search.html">Course search</a></li>
+            <li><a href="../enrollment summary/index.html">All Course</a></li>
+            <li><a href="#">Course search</a></li>
           </ul>
         </nav>
 
@@ -37,21 +34,19 @@
             </svg>
             <span class="notification-badge">4</span>
           </button>
-          <div class="user-info">
+          <a href="../Student Profile/index.html" class="user-info" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 5px;">
             <span>0M</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M4 6L8 10L12 6" stroke="#666" stroke-width="2" stroke-linecap="round"/>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
     <main>
       <h2>Course overview</h2>
 
-      <!-- Filters -->
       <div class="filters">
         <select class="filter-dropdown">
           <option>All</option>
@@ -74,10 +69,8 @@
         </select>
       </div>
 
-      <!-- Course Grid -->
       <div class="course-grid">
-        <!-- Course 1 -->
-        <div class="course-card">
+        <a href="../enrollment summary/index.html" class="course-card" style="text-decoration: none; color: inherit;">
           <div class="course-image green">
             <span class="dept-badge">Dept. of CSE</span>
           </div>
@@ -85,10 +78,9 @@
             <div class="course-title">Fall 25 CSE 123/EEE 2123 (I) : Electronics</div>
             <button class="info-btn" aria-label="Course info">i</button>
           </div>
-        </div>
+        </a>
 
-        <!-- Course 2 -->
-        <div class="course-card">
+        <a href="../enrollment summary/index.html" class="course-card" style="text-decoration: none; color: inherit;">
           <div class="course-image cyan">
             <span class="dept-badge">Dept. of CSE</span>
           </div>
@@ -96,10 +88,9 @@
             <div class="course-title">Fall 25 CSE 3412/CSI 312 (Q) : System Analysis ...</div>
             <button class="info-btn" aria-label="Course info">i</button>
           </div>
-        </div>
+        </a>
 
-        <!-- Course 3 -->
-        <div class="course-card">
+        <a href="../enrollment summary/index.html" class="course-card" style="text-decoration: none; color: inherit;">
           <div class="course-image orange">
             <span class="dept-badge">Dept. of CSE</span>
           </div>
@@ -107,10 +98,9 @@
             <div class="course-title">Fall 25 CSE 3421/CSI 321 (F) : Software ...</div>
             <button class="info-btn" aria-label="Course info">i</button>
           </div>
-        </div>
+        </a>
 
-        <!-- Course 4 -->
-        <div class="course-card">
+        <a href="../enrollment summary/index.html" class="course-card" style="text-decoration: none; color: inherit;">
           <div class="course-image yellow">
             <span class="dept-badge">Dept. of CSE</span>
           </div>
@@ -118,10 +108,9 @@
             <div class="course-title">Fall 25 CSE 4165/CSE 465 (E) : Web Programming</div>
             <button class="info-btn" aria-label="Course info">i</button>
           </div>
-        </div>
+        </a>
 
-        <!-- Course 5 -->
-        <div class="course-card">
+        <a href="../enrollment summary/index.html" class="course-card" style="text-decoration: none; color: inherit;">
           <div class="course-image cyan">
             <span class="dept-badge">Dept. of CSE</span>
           </div>
@@ -129,10 +118,9 @@
             <div class="course-title">Fall 25 CSE 469/PMG 4101 (A) : Project ...</div>
             <button class="info-btn" aria-label="Course info">i</button>
           </div>
-        </div>
+        </a>
 
-        <!-- Course 6 -->
-        <div class="course-card">
+        <a href="../enrollment summary/index.html" class="course-card" style="text-decoration: none; color: inherit;">
           <div class="course-image green">
             <span class="dept-badge">Dept. of CSE</span>
           </div>
@@ -140,11 +128,10 @@
             <div class="course-title">Fall 25 CSE 4889/CSE 489 (B) : Machine Learning</div>
             <button class="info-btn" aria-label="Course info">i</button>
           </div>
-        </div>
+        </a>
       </div>
     </main>
 
-    <!-- Help Button -->
     <button class="help-btn" aria-label="Help">?</button>
   </body>
 </html>

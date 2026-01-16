@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EduConnect Teacher Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- Top Navbar -->
+    <header id="topbar">
+      <div class="logo">EduHub</div>
+      <nav class="top-nav">
+        <a href="" class="active">Dashboard</a>
+        <a href="../Teacher Course Content Management/index.html">Courses</a>
+        <a href="#">Calendar</a>
+        <a href="#">Messages</a>
+      </nav>
+      <div class="top-right">
+        <input type="text" placeholder="Search" class="search-input" />
+        <div class="icon">🔔</div>
+        <div class="avatar"><a href="../Teacher Profile/index.html" style="text-decoration: none;">R</a></div>
+      </div>
+    </header>
+
+    <div id="layout">
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="teacher-info">
+          <div class="avatar big">R</div>
+          <div>
+            <div class="teacher-name">Ms. Rahat</div>
+            <div class="teacher-role">Teacher</div>
+          </div>
+        </div>
+
+        <nav class="side-nav">
+          <a href="#" class="side-link active">Dashboard</a>
+          <a href="../Teacher Course Content Management/index.html" class="side-link">Courses</a>
+          <a href="#" class="side-link">Calendar</a>
+          <a href="#" class="side-link">Messages</a>
+          <a href="../Teacher Create Quiz/index.html" class="side-link">Quiz</a>
+          <a href="../Teacher Create Assignment/index.html" class="side-link">Assignment</a>
+          <a href="../Teacher Submission Grading/index.html" class="side-link">Grading</a>
+          <a href="#" class="side-link">Settings</a>
+          <a href="#" class="side-link">Log Out</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main id="main">
+        <section class="section">
+          <h1>Dashboard</h1>
+          <p class="subtitle">Welcome back, Ms. Johnson</p>
+        </section>
+
+        <!-- Quick Summary -->
+        <section class="section">
+          <h2>Quick Summary of Student Progress Across Courses</h2>
+
+          <div class="card-row">
+            <div class="course-card">
+              <div class="course-text">
+                <h3>Math 101</h3>
+                <p>Average Quiz Score: 85%</p>
+                <p>Assignment Completion: 92%</p>
+                <p>Overall Progress: 75%</p>
+                <button class="btn">View Course</button>
+              </div>
+              <div class="course-image"></div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-text">
+                <h3>Science 202</h3>
+                <p>Average Quiz Score: 78%</p>
+                <p>Assignment Completion: 88%</p>
+                <p>Overall Progress: 68%</p>
+                <button class="btn">View Course</button>
+              </div>
+              <div class="course-image"></div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-text">
+                <h3>History 303</h3>
+                <p>Average Quiz Score: 90%</p>
+                <p>Assignment Completion: 95%</p>
+                <p>Overall Progress: 85%</p>
+                <button class="btn">View Course</button>
+              </div>
+              <div class="course-image"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Calendar -->
+        <section class="section">
+          <h2>Upcoming Deadlines and Important Dates</h2>
+          <div class="calendar-box">
+            <div class="calendar-header">
+              <button>&lt;</button>
+              <span>July 2024</span>
+              <button>&gt;</button>
+            </div>
+            <div class="calendar-grid">
+              <!-- simple fake calendar -->
+              <div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div>
+              <div></div><div>1</div><div>2</div><div>3</div><div class="day active">4</div><div>5</div><div>6</div>
+              <!-- add more days as needed -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Announcements -->
+        <section class="section">
+          <h2>Announcements</h2>
+
+          <div class="announce-card">
+            <div class="announce-text">
+              <h3>New Course Announcement</h3>
+              <p>Welcome to the new semester! Please check the course syllabus and schedule.</p>
+              <button class="btn">View Course</button>
+            </div>
+            <div class="announce-image"></div>
+          </div>
+
+          <div class="announce-card">
+            <div class="announce-text">
+              <h3>Upcoming Exam</h3>
+              <p>Reminder: The midterm exam for Math 101 is scheduled for next Friday.</p>
+              <button class="btn">View Exam Details</button>
+            </div>
+            <div class="announce-image"></div>
+          </div>
+
+          <div class="announce-card">
+            <div class="announce-text">
+              <h3>Office Hours</h3>
+              <p>Office hours are on Tuesdays and Thursdays from 2 PM to 4 PM.</p>
+              <button class="btn">View Schedule</button>
+            </div>
+            <div class="announce-image"></div>
+          </div>
+
+          <button class="btn primary create-btn">Create New Announcement</button>
+        </section>
+
+      </main>
+    </div>
+  </div>
+</body>
+</html>

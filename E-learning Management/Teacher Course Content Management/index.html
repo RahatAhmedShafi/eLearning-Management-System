@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Content Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="teacher-box">
+      <div class="teacher-avatar">R</div>
+      <div class="teacher-meta">
+        <div class="name">Ms. Rahat</div>
+        <div class="role">Teacher</div>
+      </div>
+    </div>
+
+    <nav class="nav-list">
+      <div class="nav-item active">Dashboard</div>
+      <div class="nav-item selected"><a href="../Teacher Course Content Management/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Courses</a></div>
+      <div class="nav-item">Calendar</div>
+      <div class="nav-item">Messages</div>
+      <div class="nav-item"><a href="../Teacher Create Quiz/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Quiz</a></div>
+      <div class="nav-item"><a href="../Teacher Create Assignment/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Assignment</a></div>
+      <div class="nav-item"><a href="../Teacher Submission Grading/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Grading</a></div>
+      <div class="nav-item">Settings</div>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <h1 class="page-title">Course Content Management</h1>
+    <p class="page-subtitle">
+      Manage and upload course materials for your students.
+    </p>
+
+    <h2 class="section-title">Upload New Materials</h2>
+
+    <div class="form-group">
+      <label for="courseTitle">Course Title</label>
+      <input id="courseTitle" class="input" type="text" />
+    </div>
+
+    <div class="form-group">
+      <label for="contentType">Content Type</label>
+      <input id="contentType" class="input" type="text" />
+    </div>
+
+    <!-- Upload area -->
+    <section class="upload-area">
+      <div class="upload-inner">
+        <p class="upload-main">Drag and drop files here, or click to browse</p>
+        <p class="upload-sub">
+          Supports multiple files. Max file size: 500MB per file.
+        </p>
+        <button class="btn btn-light">Select Files</button>
+      </div>
+    </section>
+
+    <!-- Progress -->
+    <section class="progress-wrap">
+      <p class="progress-label">Uploading...</p>
+      <div class="progress-track">
+        <div class="progress-bar"></div>
+      </div>
+      <p class="progress-info">3 of 5 files uploaded</p>
+    </section>
+
+    <!-- Save button -->
+    <div class="page-actions">
+      <button class="btn btn-primary">Save Changes</button>
+    </div>
+  </main>
+</div>
+</body>
+</html>

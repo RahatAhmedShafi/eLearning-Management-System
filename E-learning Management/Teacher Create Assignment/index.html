@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="teacher-box">
+      <div class="teacher-avatar">R</div>
+      <div class="teacher-meta">
+        <div class="name">Ms. Rahat</div>
+        <div class="role">Teacher</div>
+      </div>
+    </div>
+
+    <nav class="nav-list">
+      <div class="nav-item active"><a href="../Teacher Dashboard/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Dashboard</a></div>
+      <div class="nav-item"><a href="../Teacher Course Content Management/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Courses</a></div>
+      <div class="nav-item">Calendar</div>
+      <div class="nav-item">Messages</div>
+      <div class="nav-item"><a href="../Teacher Create Quiz/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Quiz</a></div>
+      <div class="nav-item selected"><a href="../Teacher Create Assignment/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Assignment</a></div>
+      <div class="nav-item"><a href="../Teacher Submission Grading/index.html"style="color: rgb(0, 0, 0);text-decoration: none;">Grading</a></div>
+      <div class="nav-item">Settings</div>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <h1 class="page-title">Course Content Management</h1>
+    <p class="page-subtitle">
+      Manage and upload course materials for your students.
+    </p>
+
+    <!-- Upload New Materials -->
+    <section class="section">
+      <h2 class="section-title">Upload New Materials</h2>
+
+      <div class="form-group">
+        <label for="courseTitle">Course Title</label>
+        <input id="courseTitle" class="input" type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="contentType">Content Type</label>
+        <input id="contentType" class="input" type="text">
+      </div>
+    </section>
+
+    <!-- Assignment Details -->
+    <section class="section">
+      <h2 class="section-title">Assignment Details</h2>
+
+      <div class="form-group">
+        <label for="assignmentTitle">Assignment Title</label>
+        <input id="assignmentTitle" class="input" type="text" placeholder="Enter assignment title">
+      </div>
+
+      <div class="form-group">
+        <label for="assignmentDescription">Assignment Description</label>
+        <textarea id="assignmentDescription" class="textarea"></textarea>
+      </div>
+    </section>
+
+    <!-- Rubric Builder -->
+    <section class="section">
+      <h2 class="section-title">Rubric Builder</h2>
+
+      <div class="rubric-box">
+        <p class="rubric-title">No Rubric Created</p>
+        <p class="rubric-sub">
+          Create a rubric to define grading criteria and scoring levels for this assignment.
+        </p>
+        <button class="btn btn-light">Create Rubric</button>
+      </div>
+    </section>
+
+    <div class="page-actions">
+      <button class="btn btn-primary">Save Changes</button>
+    </div>
+  </main>
+</div>
+</body>
+</html>

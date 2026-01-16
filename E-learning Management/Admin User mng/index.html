@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">Admin</div>
+
+    <nav class="nav-list">
+      <div class="nav-item"><a href="../Admin Dashboard/index.html" style="text-decoration: none;color: black;">Dashboard</a></div>
+      <div class="nav-item" ><a href="../Admin Course mng/index.html"style="text-decoration: none;color: black;">Courses</a></div>
+      <div class="nav-item active" ><a href="../Admin User mng/index.html"style="text-decoration: none;color: black;">Users</a></div>
+      <div class="nav-item" ><a href="../Admin Instructor Applications/index.html"style="text-decoration: none;color: black;">Instructors</a></div>
+      <div class="nav-item" ><a href="../Admin Certificate Templates/index.html"style="text-decoration: none;color: black;">Certificate</a></div>
+     
+       <div  class="nav-item"><a href="../Admin Course Categories/index.html"style="text-decoration: none;color: black;">Categories</a></div>
+      <div class="nav-item">Settings</div>
+    </nav>
+
+    <button class="btn btn-primary create-btn">Create a course</button>
+
+    <div class="side-footer">
+      <button class="link-btn">Help and Support</button>
+      <button class="link-btn">Log out</button>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <header class="page-header">
+      <h1 class="page-title">Users</h1>
+      <p class="page-subtitle">Manage all users in the system</p>
+    </header>
+
+    <!-- Search -->
+    <div class="search-bar">
+      <input class="search-input" type="text" placeholder="Search users">
+    </div>
+
+    <!-- Filters -->
+    <div class="filter-row">
+      <button class="filter-btn">Role ▾</button>
+      <button class="filter-btn">Status ▾</button>
+      <button class="filter-btn">Date Joined ▾</button>
+    </div>
+
+    <!-- Users table -->
+    <section class="table-box">
+      <div class="table-header">
+        <div>Name</div>
+        <div>Email</div>
+        <div>Role</div>
+        <div>Status</div>
+        <div>Joined Date</div>
+        <div>Actions</div>
+      </div>
+
+      <div class="table-row">
+        <div>Ethan Harper</div>
+        <div class="link">ethan.harper@email.com</div>
+        <div>Student</div>
+        <div><span class="pill active">Active</span></div>
+        <div>2023-01-15</div>
+        <div class="actions"><a href="#">View</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>Olivia Bennett</div>
+        <div class="link">olivia.bennett@email.com</div>
+        <div>Instructor</div>
+        <div><span class="pill active">Active</span></div>
+        <div>2022-11-20</div>
+        <div class="actions"><a href="#">View</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>Liam Carter</div>
+        <div class="link">liam.carter@email.com</div>
+        <div>Student</div>
+        <div><span class="pill inactive">Inactive</span></div>
+        <div>2023-03-05</div>
+        <div class="actions"><a href="#">View</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>Sophia Davis</div>
+        <div class="link">sophia.davis@email.com</div>
+        <div>Instructor</div>
+        <div><span class="pill pending">Pending Approval</span></div>
+        <div>2023-04-10</div>
+        <div class="actions"><a href="#">View</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>Noah Evans</div>
+        <div class="link">noah.evans@email.com</div>
+        <div>Student</div>
+        <div><span class="pill active">Active</span></div>
+        <div>2022-09-28</div>
+        <div class="actions"><a href="#">View</a></div>
+      </div>
+
+      <!-- Add more rows as needed -->
+    </section>
+  </main>
+</div>
+</body>
+</html>

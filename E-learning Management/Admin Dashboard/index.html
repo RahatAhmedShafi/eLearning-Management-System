@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left">
+    <div class="logo">EduHub</div>
+  </div>
+
+  <nav class="topbar-menu">
+    <div class="nav-item"><a href="../Admin Dashboard/index.html" style="text-decoration: none;color: black;">Dashboard</a></div>
+      <div class="nav-item active"><a href="../Admin Course mng/index.html"style="text-decoration: none;color: black;">Courses</a></div>
+      <div class="nav-item"><a href="../Admin User mng/index.html"style="text-decoration: none;color: black;">Users</a></div>
+      <div class="nav-item" ><a href="../Admin Instructor Applications/index.html"style="text-decoration: none;color: black;">Instructors</a></div>
+      <div class="nav-item" ><a href="../Admin Certificate Templates/index.html"style="text-decoration: none;color: black;">Certificate</a></div>
+     
+       <div  class="nav-item"><a href="../Admin Course Categories/index.html"style="text-decoration: none;color: black;">Categories</a></div>
+      <div class="nav-item">Settings</div>
+  </nav>
+
+  <div class="topbar-right">
+    <div class="avatar"></div>
+  </div>
+</header>
+
+<main class="main">
+  <!-- Page header -->
+  <section class="page-header">
+    <h1 class="page-title">Admin Dashboard</h1>
+    <p class="page-subtitle">
+      Welcome back, Sarah! Here's an overview of the system.
+    </p>
+  </section>
+
+  <!-- Summary cards -->
+  <section class="summary-row">
+    <div class="summary-card">
+      <p class="summary-label">System Health</p>
+      <p class="summary-value">Online</p>
+    </div>
+    <div class="summary-card">
+      <p class="summary-label">Active Users</p>
+      <p class="summary-value">1,250</p>
+    </div>
+    <div class="summary-card">
+      <p class="summary-label">Total Courses</p>
+      <p class="summary-value">350</p>
+    </div>
+  </section>
+
+  <!-- Course statistics -->
+  <section class="stats-section">
+    <h2 class="section-title">Course Statistics</h2>
+
+    <div class="stats-row">
+      <!-- Enrollment card -->
+      <div class="stat-card">
+        <div class="stat-header">
+          <p class="stat-label">Course Enrollment</p>
+        </div>
+        <p class="stat-main">2,500</p>
+        <p class="stat-sub">
+          Last 30 Days <span class="stat-positive">+15%</span>
+        </p>
+
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="bar-labels">
+          <span>Jan</span><span>Feb</span><span>Mar</span>
+          <span>Apr</span><span>May</span><span>Jun</span>
+        </div>
+      </div>
+
+      <!-- Completion rate card -->
+      <div class="stat-card">
+        <div class="stat-header">
+          <p class="stat-label">Course Completion Rate</p>
+        </div>
+        <p class="stat-main">85%</p>
+        <p class="stat-sub">
+          Last 30 Days <span class="stat-negative">-5%</span>
+        </p>
+
+        <div class="line-chart">
+          <div class="line-placeholder">Line chart</div>
+        </div>
+
+        <div class="bar-labels">
+          <span>Jan</span><span>Feb</span><span>Mar</span>
+          <span>Apr</span><span>May</span><span>Jun</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pending approvals -->
+  <section class="pending-section">
+    <h2 class="section-title">Pending Approvals</h2>
+
+    <div class="table-box">
+      <div class="table-header">
+        <div>Name</div>
+        <div>Email</div>
+        <div>Role</div>
+        <div>Status</div>
+        <div>Actions</div>
+      </div>
+
+      <div class="table-row">
+        <div>Emily Carter</div>
+        <div class="email">emily.carter@email.com</div>
+        <div><span class="pill">Instructor</span></div>
+        <div><span class="pill light">Pending</span></div>
+        <div><a href="#" class="link">Approve</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>David Lee</div>
+        <div class="email">david.lee@email.com</div>
+        <div><span class="pill">Instructor</span></div>
+        <div><span class="pill light">Pending</span></div>
+        <div><a href="#" class="link">Approve</a></div>
+      </div>
+
+      <div class="table-row">
+        <div>Jessica Brown</div>
+        <div class="email">jessica.brown@email.com</div>
+        <div><span class="pill">Instructor</span></div>
+        <div><span class="pill light">Pending</span></div>
+        <div><a href="#" class="link">Approve</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
